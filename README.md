@@ -1,2 +1,17 @@
 # upload-watcher
-upload-watcher simple file watcher base on c# made for testing
+
+
+## Настройка
+
+В `appsettings.json` нужно заменить только секцию `MonitorSettings`.
+
+`DirectoryPath` — физический путь к файлам.
+
+```json
+{
+  "MonitorSettings": {
+    "DirectoryPath": "D:\\GitRepos\\UpdateWatcher\\Files",
+    "PollingIntervalSeconds": 5
+  }
+}
+```
